@@ -65,30 +65,712 @@ CMAKE_BINARY_DIR = /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build
 # The main recursive "all" target.
 all: CMakeFiles/sentinelx_lib.dir/all
 all: CMakeFiles/SentinelX.dir/all
+all: LIEF/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: LIEF/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/sentinelx_lib.dir/clean
 clean: CMakeFiles/SentinelX.dir/clean
+clean: LIEF/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory LIEF
+
+# Recursive "all" directory target.
+LIEF/all: LIEF/CMakeFiles/lief_libjson.dir/all
+LIEF/all: LIEF/CMakeFiles/lief_mbed_tls.dir/all
+LIEF/all: LIEF/CMakeFiles/lief_spdlog_project.dir/all
+LIEF/all: LIEF/CMakeFiles/lief_frozen.dir/all
+LIEF/all: LIEF/CMakeFiles/lief_expected.dir/all
+LIEF/all: LIEF/CMakeFiles/lief_utfcpp.dir/all
+LIEF/all: LIEF/CMakeFiles/lief_span.dir/all
+LIEF/all: LIEF/CMakeFiles/LIB_LIEF.dir/all
+LIEF/all: LIEF/src/all
+LIEF/all: LIEF/api/all
+LIEF/all: LIEF/package/all
+.PHONY : LIEF/all
+
+# Recursive "preinstall" directory target.
+LIEF/preinstall: LIEF/src/preinstall
+LIEF/preinstall: LIEF/api/preinstall
+LIEF/preinstall: LIEF/package/preinstall
+.PHONY : LIEF/preinstall
+
+# Recursive "clean" directory target.
+LIEF/clean: LIEF/CMakeFiles/lief_libjson.dir/clean
+LIEF/clean: LIEF/CMakeFiles/lief_mbed_tls.dir/clean
+LIEF/clean: LIEF/CMakeFiles/lief_spdlog_project.dir/clean
+LIEF/clean: LIEF/CMakeFiles/lief_frozen.dir/clean
+LIEF/clean: LIEF/CMakeFiles/lief_expected.dir/clean
+LIEF/clean: LIEF/CMakeFiles/lief_utfcpp.dir/clean
+LIEF/clean: LIEF/CMakeFiles/lief_span.dir/clean
+LIEF/clean: LIEF/CMakeFiles/LIB_LIEF.dir/clean
+LIEF/clean: LIEF/src/clean
+LIEF/clean: LIEF/api/clean
+LIEF/clean: LIEF/package/clean
+.PHONY : LIEF/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/api
+
+# Recursive "all" directory target.
+LIEF/api/all: LIEF/api/c/all
+.PHONY : LIEF/api/all
+
+# Recursive "preinstall" directory target.
+LIEF/api/preinstall: LIEF/api/c/preinstall
+.PHONY : LIEF/api/preinstall
+
+# Recursive "clean" directory target.
+LIEF/api/clean: LIEF/api/c/clean
+.PHONY : LIEF/api/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/api/c
+
+# Recursive "all" directory target.
+LIEF/api/c/all: LIEF/api/c/ELF/all
+LIEF/api/c/all: LIEF/api/c/PE/all
+LIEF/api/c/all: LIEF/api/c/MachO/all
+.PHONY : LIEF/api/c/all
+
+# Recursive "preinstall" directory target.
+LIEF/api/c/preinstall: LIEF/api/c/ELF/preinstall
+LIEF/api/c/preinstall: LIEF/api/c/PE/preinstall
+LIEF/api/c/preinstall: LIEF/api/c/MachO/preinstall
+.PHONY : LIEF/api/c/preinstall
+
+# Recursive "clean" directory target.
+LIEF/api/c/clean: LIEF/api/c/ELF/clean
+LIEF/api/c/clean: LIEF/api/c/PE/clean
+LIEF/api/c/clean: LIEF/api/c/MachO/clean
+.PHONY : LIEF/api/c/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/api/c/ELF
+
+# Recursive "all" directory target.
+LIEF/api/c/ELF/all:
+.PHONY : LIEF/api/c/ELF/all
+
+# Recursive "preinstall" directory target.
+LIEF/api/c/ELF/preinstall:
+.PHONY : LIEF/api/c/ELF/preinstall
+
+# Recursive "clean" directory target.
+LIEF/api/c/ELF/clean:
+.PHONY : LIEF/api/c/ELF/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/api/c/MachO
+
+# Recursive "all" directory target.
+LIEF/api/c/MachO/all:
+.PHONY : LIEF/api/c/MachO/all
+
+# Recursive "preinstall" directory target.
+LIEF/api/c/MachO/preinstall:
+.PHONY : LIEF/api/c/MachO/preinstall
+
+# Recursive "clean" directory target.
+LIEF/api/c/MachO/clean:
+.PHONY : LIEF/api/c/MachO/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/api/c/PE
+
+# Recursive "all" directory target.
+LIEF/api/c/PE/all:
+.PHONY : LIEF/api/c/PE/all
+
+# Recursive "preinstall" directory target.
+LIEF/api/c/PE/preinstall:
+.PHONY : LIEF/api/c/PE/preinstall
+
+# Recursive "clean" directory target.
+LIEF/api/c/PE/clean:
+.PHONY : LIEF/api/c/PE/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/package
+
+# Recursive "all" directory target.
+LIEF/package/all:
+.PHONY : LIEF/package/all
+
+# Recursive "preinstall" directory target.
+LIEF/package/preinstall:
+.PHONY : LIEF/package/preinstall
+
+# Recursive "clean" directory target.
+LIEF/package/clean:
+.PHONY : LIEF/package/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src
+
+# Recursive "all" directory target.
+LIEF/src/all: LIEF/src/BinaryStream/all
+LIEF/src/all: LIEF/src/Abstract/all
+LIEF/src/all: LIEF/src/platforms/all
+LIEF/src/all: LIEF/src/ELF/all
+LIEF/src/all: LIEF/src/PE/all
+LIEF/src/all: LIEF/src/MachO/all
+LIEF/src/all: LIEF/src/COFF/all
+LIEF/src/all: LIEF/src/OAT/all
+LIEF/src/all: LIEF/src/DEX/all
+LIEF/src/all: LIEF/src/VDEX/all
+LIEF/src/all: LIEF/src/ART/all
+LIEF/src/all: LIEF/src/DWARF/all
+LIEF/src/all: LIEF/src/PDB/all
+LIEF/src/all: LIEF/src/ObjC/all
+LIEF/src/all: LIEF/src/dyld-shared-cache/all
+LIEF/src/all: LIEF/src/asm/all
+.PHONY : LIEF/src/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/preinstall: LIEF/src/BinaryStream/preinstall
+LIEF/src/preinstall: LIEF/src/Abstract/preinstall
+LIEF/src/preinstall: LIEF/src/platforms/preinstall
+LIEF/src/preinstall: LIEF/src/ELF/preinstall
+LIEF/src/preinstall: LIEF/src/PE/preinstall
+LIEF/src/preinstall: LIEF/src/MachO/preinstall
+LIEF/src/preinstall: LIEF/src/COFF/preinstall
+LIEF/src/preinstall: LIEF/src/OAT/preinstall
+LIEF/src/preinstall: LIEF/src/DEX/preinstall
+LIEF/src/preinstall: LIEF/src/VDEX/preinstall
+LIEF/src/preinstall: LIEF/src/ART/preinstall
+LIEF/src/preinstall: LIEF/src/DWARF/preinstall
+LIEF/src/preinstall: LIEF/src/PDB/preinstall
+LIEF/src/preinstall: LIEF/src/ObjC/preinstall
+LIEF/src/preinstall: LIEF/src/dyld-shared-cache/preinstall
+LIEF/src/preinstall: LIEF/src/asm/preinstall
+.PHONY : LIEF/src/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/clean: LIEF/src/BinaryStream/clean
+LIEF/src/clean: LIEF/src/Abstract/clean
+LIEF/src/clean: LIEF/src/platforms/clean
+LIEF/src/clean: LIEF/src/ELF/clean
+LIEF/src/clean: LIEF/src/PE/clean
+LIEF/src/clean: LIEF/src/MachO/clean
+LIEF/src/clean: LIEF/src/COFF/clean
+LIEF/src/clean: LIEF/src/OAT/clean
+LIEF/src/clean: LIEF/src/DEX/clean
+LIEF/src/clean: LIEF/src/VDEX/clean
+LIEF/src/clean: LIEF/src/ART/clean
+LIEF/src/clean: LIEF/src/DWARF/clean
+LIEF/src/clean: LIEF/src/PDB/clean
+LIEF/src/clean: LIEF/src/ObjC/clean
+LIEF/src/clean: LIEF/src/dyld-shared-cache/clean
+LIEF/src/clean: LIEF/src/asm/clean
+.PHONY : LIEF/src/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/ART
+
+# Recursive "all" directory target.
+LIEF/src/ART/all:
+.PHONY : LIEF/src/ART/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/ART/preinstall:
+.PHONY : LIEF/src/ART/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/ART/clean:
+.PHONY : LIEF/src/ART/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/Abstract
+
+# Recursive "all" directory target.
+LIEF/src/Abstract/all:
+.PHONY : LIEF/src/Abstract/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/Abstract/preinstall:
+.PHONY : LIEF/src/Abstract/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/Abstract/clean:
+.PHONY : LIEF/src/Abstract/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/BinaryStream
+
+# Recursive "all" directory target.
+LIEF/src/BinaryStream/all:
+.PHONY : LIEF/src/BinaryStream/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/BinaryStream/preinstall:
+.PHONY : LIEF/src/BinaryStream/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/BinaryStream/clean:
+.PHONY : LIEF/src/BinaryStream/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/COFF
+
+# Recursive "all" directory target.
+LIEF/src/COFF/all: LIEF/src/COFF/AuxiliarySymbols/all
+.PHONY : LIEF/src/COFF/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/COFF/preinstall: LIEF/src/COFF/AuxiliarySymbols/preinstall
+.PHONY : LIEF/src/COFF/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/COFF/clean: LIEF/src/COFF/AuxiliarySymbols/clean
+.PHONY : LIEF/src/COFF/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/COFF/AuxiliarySymbols
+
+# Recursive "all" directory target.
+LIEF/src/COFF/AuxiliarySymbols/all:
+.PHONY : LIEF/src/COFF/AuxiliarySymbols/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/COFF/AuxiliarySymbols/preinstall:
+.PHONY : LIEF/src/COFF/AuxiliarySymbols/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/COFF/AuxiliarySymbols/clean:
+.PHONY : LIEF/src/COFF/AuxiliarySymbols/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/DEX
+
+# Recursive "all" directory target.
+LIEF/src/DEX/all:
+.PHONY : LIEF/src/DEX/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/DEX/preinstall:
+.PHONY : LIEF/src/DEX/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/DEX/clean:
+.PHONY : LIEF/src/DEX/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/DWARF
+
+# Recursive "all" directory target.
+LIEF/src/DWARF/all:
+.PHONY : LIEF/src/DWARF/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/DWARF/preinstall:
+.PHONY : LIEF/src/DWARF/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/DWARF/clean:
+.PHONY : LIEF/src/DWARF/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/ELF
+
+# Recursive "all" directory target.
+LIEF/src/ELF/all: LIEF/src/ELF/NoteDetails/all
+LIEF/src/ELF/all: LIEF/src/ELF/DataHandler/all
+.PHONY : LIEF/src/ELF/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/ELF/preinstall: LIEF/src/ELF/NoteDetails/preinstall
+LIEF/src/ELF/preinstall: LIEF/src/ELF/DataHandler/preinstall
+.PHONY : LIEF/src/ELF/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/ELF/clean: LIEF/src/ELF/NoteDetails/clean
+LIEF/src/ELF/clean: LIEF/src/ELF/DataHandler/clean
+.PHONY : LIEF/src/ELF/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/ELF/DataHandler
+
+# Recursive "all" directory target.
+LIEF/src/ELF/DataHandler/all:
+.PHONY : LIEF/src/ELF/DataHandler/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/ELF/DataHandler/preinstall:
+.PHONY : LIEF/src/ELF/DataHandler/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/ELF/DataHandler/clean:
+.PHONY : LIEF/src/ELF/DataHandler/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/ELF/NoteDetails
+
+# Recursive "all" directory target.
+LIEF/src/ELF/NoteDetails/all: LIEF/src/ELF/NoteDetails/core/all
+LIEF/src/ELF/NoteDetails/all: LIEF/src/ELF/NoteDetails/properties/all
+.PHONY : LIEF/src/ELF/NoteDetails/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/ELF/NoteDetails/preinstall: LIEF/src/ELF/NoteDetails/core/preinstall
+LIEF/src/ELF/NoteDetails/preinstall: LIEF/src/ELF/NoteDetails/properties/preinstall
+.PHONY : LIEF/src/ELF/NoteDetails/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/ELF/NoteDetails/clean: LIEF/src/ELF/NoteDetails/core/clean
+LIEF/src/ELF/NoteDetails/clean: LIEF/src/ELF/NoteDetails/properties/clean
+.PHONY : LIEF/src/ELF/NoteDetails/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/ELF/NoteDetails/core
+
+# Recursive "all" directory target.
+LIEF/src/ELF/NoteDetails/core/all:
+.PHONY : LIEF/src/ELF/NoteDetails/core/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/ELF/NoteDetails/core/preinstall:
+.PHONY : LIEF/src/ELF/NoteDetails/core/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/ELF/NoteDetails/core/clean:
+.PHONY : LIEF/src/ELF/NoteDetails/core/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/ELF/NoteDetails/properties
+
+# Recursive "all" directory target.
+LIEF/src/ELF/NoteDetails/properties/all:
+.PHONY : LIEF/src/ELF/NoteDetails/properties/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/ELF/NoteDetails/properties/preinstall:
+.PHONY : LIEF/src/ELF/NoteDetails/properties/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/ELF/NoteDetails/properties/clean:
+.PHONY : LIEF/src/ELF/NoteDetails/properties/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/MachO
+
+# Recursive "all" directory target.
+LIEF/src/MachO/all:
+.PHONY : LIEF/src/MachO/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/MachO/preinstall:
+.PHONY : LIEF/src/MachO/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/MachO/clean:
+.PHONY : LIEF/src/MachO/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/OAT
+
+# Recursive "all" directory target.
+LIEF/src/OAT/all:
+.PHONY : LIEF/src/OAT/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/OAT/preinstall:
+.PHONY : LIEF/src/OAT/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/OAT/clean:
+.PHONY : LIEF/src/OAT/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/ObjC
+
+# Recursive "all" directory target.
+LIEF/src/ObjC/all:
+.PHONY : LIEF/src/ObjC/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/ObjC/preinstall:
+.PHONY : LIEF/src/ObjC/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/ObjC/clean:
+.PHONY : LIEF/src/ObjC/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PDB
+
+# Recursive "all" directory target.
+LIEF/src/PDB/all:
+.PHONY : LIEF/src/PDB/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PDB/preinstall:
+.PHONY : LIEF/src/PDB/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PDB/clean:
+.PHONY : LIEF/src/PDB/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE
+
+# Recursive "all" directory target.
+LIEF/src/PE/all: LIEF/src/PE/signature/all
+LIEF/src/PE/all: LIEF/src/PE/LoadConfigurations/all
+LIEF/src/PE/all: LIEF/src/PE/resources/all
+LIEF/src/PE/all: LIEF/src/PE/debug/all
+LIEF/src/PE/all: LIEF/src/PE/exceptions_info/all
+.PHONY : LIEF/src/PE/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/preinstall: LIEF/src/PE/signature/preinstall
+LIEF/src/PE/preinstall: LIEF/src/PE/LoadConfigurations/preinstall
+LIEF/src/PE/preinstall: LIEF/src/PE/resources/preinstall
+LIEF/src/PE/preinstall: LIEF/src/PE/debug/preinstall
+LIEF/src/PE/preinstall: LIEF/src/PE/exceptions_info/preinstall
+.PHONY : LIEF/src/PE/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/clean: LIEF/src/PE/signature/clean
+LIEF/src/PE/clean: LIEF/src/PE/LoadConfigurations/clean
+LIEF/src/PE/clean: LIEF/src/PE/resources/clean
+LIEF/src/PE/clean: LIEF/src/PE/debug/clean
+LIEF/src/PE/clean: LIEF/src/PE/exceptions_info/clean
+.PHONY : LIEF/src/PE/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE/LoadConfigurations
+
+# Recursive "all" directory target.
+LIEF/src/PE/LoadConfigurations/all: LIEF/src/PE/LoadConfigurations/CHPEMetadata/all
+LIEF/src/PE/LoadConfigurations/all: LIEF/src/PE/LoadConfigurations/DynamicRelocation/all
+.PHONY : LIEF/src/PE/LoadConfigurations/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/LoadConfigurations/preinstall: LIEF/src/PE/LoadConfigurations/CHPEMetadata/preinstall
+LIEF/src/PE/LoadConfigurations/preinstall: LIEF/src/PE/LoadConfigurations/DynamicRelocation/preinstall
+.PHONY : LIEF/src/PE/LoadConfigurations/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/LoadConfigurations/clean: LIEF/src/PE/LoadConfigurations/CHPEMetadata/clean
+LIEF/src/PE/LoadConfigurations/clean: LIEF/src/PE/LoadConfigurations/DynamicRelocation/clean
+.PHONY : LIEF/src/PE/LoadConfigurations/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE/LoadConfigurations/CHPEMetadata
+
+# Recursive "all" directory target.
+LIEF/src/PE/LoadConfigurations/CHPEMetadata/all:
+.PHONY : LIEF/src/PE/LoadConfigurations/CHPEMetadata/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/LoadConfigurations/CHPEMetadata/preinstall:
+.PHONY : LIEF/src/PE/LoadConfigurations/CHPEMetadata/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/LoadConfigurations/CHPEMetadata/clean:
+.PHONY : LIEF/src/PE/LoadConfigurations/CHPEMetadata/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE/LoadConfigurations/DynamicRelocation
+
+# Recursive "all" directory target.
+LIEF/src/PE/LoadConfigurations/DynamicRelocation/all:
+.PHONY : LIEF/src/PE/LoadConfigurations/DynamicRelocation/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/LoadConfigurations/DynamicRelocation/preinstall:
+.PHONY : LIEF/src/PE/LoadConfigurations/DynamicRelocation/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/LoadConfigurations/DynamicRelocation/clean:
+.PHONY : LIEF/src/PE/LoadConfigurations/DynamicRelocation/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE/debug
+
+# Recursive "all" directory target.
+LIEF/src/PE/debug/all:
+.PHONY : LIEF/src/PE/debug/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/debug/preinstall:
+.PHONY : LIEF/src/PE/debug/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/debug/clean:
+.PHONY : LIEF/src/PE/debug/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE/exceptions_info
+
+# Recursive "all" directory target.
+LIEF/src/PE/exceptions_info/all: LIEF/src/PE/exceptions_info/AArch64/all
+.PHONY : LIEF/src/PE/exceptions_info/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/exceptions_info/preinstall: LIEF/src/PE/exceptions_info/AArch64/preinstall
+.PHONY : LIEF/src/PE/exceptions_info/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/exceptions_info/clean: LIEF/src/PE/exceptions_info/AArch64/clean
+.PHONY : LIEF/src/PE/exceptions_info/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE/exceptions_info/AArch64
+
+# Recursive "all" directory target.
+LIEF/src/PE/exceptions_info/AArch64/all:
+.PHONY : LIEF/src/PE/exceptions_info/AArch64/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/exceptions_info/AArch64/preinstall:
+.PHONY : LIEF/src/PE/exceptions_info/AArch64/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/exceptions_info/AArch64/clean:
+.PHONY : LIEF/src/PE/exceptions_info/AArch64/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE/resources
+
+# Recursive "all" directory target.
+LIEF/src/PE/resources/all:
+.PHONY : LIEF/src/PE/resources/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/resources/preinstall:
+.PHONY : LIEF/src/PE/resources/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/resources/clean:
+.PHONY : LIEF/src/PE/resources/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE/signature
+
+# Recursive "all" directory target.
+LIEF/src/PE/signature/all: LIEF/src/PE/signature/attributes/all
+.PHONY : LIEF/src/PE/signature/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/signature/preinstall: LIEF/src/PE/signature/attributes/preinstall
+.PHONY : LIEF/src/PE/signature/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/signature/clean: LIEF/src/PE/signature/attributes/clean
+.PHONY : LIEF/src/PE/signature/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/PE/signature/attributes
+
+# Recursive "all" directory target.
+LIEF/src/PE/signature/attributes/all:
+.PHONY : LIEF/src/PE/signature/attributes/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/PE/signature/attributes/preinstall:
+.PHONY : LIEF/src/PE/signature/attributes/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/PE/signature/attributes/clean:
+.PHONY : LIEF/src/PE/signature/attributes/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/VDEX
+
+# Recursive "all" directory target.
+LIEF/src/VDEX/all:
+.PHONY : LIEF/src/VDEX/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/VDEX/preinstall:
+.PHONY : LIEF/src/VDEX/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/VDEX/clean:
+.PHONY : LIEF/src/VDEX/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/asm
+
+# Recursive "all" directory target.
+LIEF/src/asm/all:
+.PHONY : LIEF/src/asm/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/asm/preinstall:
+.PHONY : LIEF/src/asm/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/asm/clean:
+.PHONY : LIEF/src/asm/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/dyld-shared-cache
+
+# Recursive "all" directory target.
+LIEF/src/dyld-shared-cache/all:
+.PHONY : LIEF/src/dyld-shared-cache/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/dyld-shared-cache/preinstall:
+.PHONY : LIEF/src/dyld-shared-cache/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/dyld-shared-cache/clean:
+.PHONY : LIEF/src/dyld-shared-cache/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/platforms
+
+# Recursive "all" directory target.
+LIEF/src/platforms/all: LIEF/src/platforms/android/all
+.PHONY : LIEF/src/platforms/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/platforms/preinstall: LIEF/src/platforms/android/preinstall
+.PHONY : LIEF/src/platforms/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/platforms/clean: LIEF/src/platforms/android/clean
+.PHONY : LIEF/src/platforms/clean
+
+#=============================================================================
+# Directory level rules for directory LIEF/src/platforms/android
+
+# Recursive "all" directory target.
+LIEF/src/platforms/android/all:
+.PHONY : LIEF/src/platforms/android/all
+
+# Recursive "preinstall" directory target.
+LIEF/src/platforms/android/preinstall:
+.PHONY : LIEF/src/platforms/android/preinstall
+
+# Recursive "clean" directory target.
+LIEF/src/platforms/android/clean:
+.PHONY : LIEF/src/platforms/android/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/sentinelx_lib.dir
 
 # All Build rule for target.
-CMakeFiles/sentinelx_lib.dir/all:
+CMakeFiles/sentinelx_lib.dir/all: LIEF/CMakeFiles/lief_spdlog_project.dir/all
+CMakeFiles/sentinelx_lib.dir/all: LIEF/CMakeFiles/LIB_LIEF.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sentinelx_lib.dir/build.make CMakeFiles/sentinelx_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sentinelx_lib.dir/build.make CMakeFiles/sentinelx_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13 "Built target sentinelx_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=98,99,100 "Built target sentinelx_lib"
 .PHONY : CMakeFiles/sentinelx_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sentinelx_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 99
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sentinelx_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
 .PHONY : CMakeFiles/sentinelx_lib.dir/rule
@@ -107,14 +789,16 @@ CMakeFiles/sentinelx_lib.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/SentinelX.dir/all: CMakeFiles/sentinelx_lib.dir/all
+CMakeFiles/SentinelX.dir/all: LIEF/CMakeFiles/lief_spdlog_project.dir/all
+CMakeFiles/SentinelX.dir/all: LIEF/CMakeFiles/LIB_LIEF.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SentinelX.dir/build.make CMakeFiles/SentinelX.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SentinelX.dir/build.make CMakeFiles/SentinelX.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=1,2 "Built target SentinelX"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=87 "Built target SentinelX"
 .PHONY : CMakeFiles/SentinelX.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SentinelX.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 100
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SentinelX.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
 .PHONY : CMakeFiles/SentinelX.dir/rule
@@ -127,6 +811,220 @@ SentinelX: CMakeFiles/SentinelX.dir/rule
 CMakeFiles/SentinelX.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SentinelX.dir/build.make CMakeFiles/SentinelX.dir/clean
 .PHONY : CMakeFiles/SentinelX.dir/clean
+
+#=============================================================================
+# Target rules for target LIEF/CMakeFiles/lief_libjson.dir
+
+# All Build rule for target.
+LIEF/CMakeFiles/lief_libjson.dir/all:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_libjson.dir/build.make LIEF/CMakeFiles/lief_libjson.dir/depend
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_libjson.dir/build.make LIEF/CMakeFiles/lief_libjson.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=91 "Built target lief_libjson"
+.PHONY : LIEF/CMakeFiles/lief_libjson.dir/all
+
+# Build rule for subdir invocation for target.
+LIEF/CMakeFiles/lief_libjson.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIEF/CMakeFiles/lief_libjson.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
+.PHONY : LIEF/CMakeFiles/lief_libjson.dir/rule
+
+# Convenience name for target.
+lief_libjson: LIEF/CMakeFiles/lief_libjson.dir/rule
+.PHONY : lief_libjson
+
+# clean rule for target.
+LIEF/CMakeFiles/lief_libjson.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_libjson.dir/build.make LIEF/CMakeFiles/lief_libjson.dir/clean
+.PHONY : LIEF/CMakeFiles/lief_libjson.dir/clean
+
+#=============================================================================
+# Target rules for target LIEF/CMakeFiles/lief_mbed_tls.dir
+
+# All Build rule for target.
+LIEF/CMakeFiles/lief_mbed_tls.dir/all:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_mbed_tls.dir/build.make LIEF/CMakeFiles/lief_mbed_tls.dir/depend
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_mbed_tls.dir/build.make LIEF/CMakeFiles/lief_mbed_tls.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=92,93 "Built target lief_mbed_tls"
+.PHONY : LIEF/CMakeFiles/lief_mbed_tls.dir/all
+
+# Build rule for subdir invocation for target.
+LIEF/CMakeFiles/lief_mbed_tls.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIEF/CMakeFiles/lief_mbed_tls.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
+.PHONY : LIEF/CMakeFiles/lief_mbed_tls.dir/rule
+
+# Convenience name for target.
+lief_mbed_tls: LIEF/CMakeFiles/lief_mbed_tls.dir/rule
+.PHONY : lief_mbed_tls
+
+# clean rule for target.
+LIEF/CMakeFiles/lief_mbed_tls.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_mbed_tls.dir/build.make LIEF/CMakeFiles/lief_mbed_tls.dir/clean
+.PHONY : LIEF/CMakeFiles/lief_mbed_tls.dir/clean
+
+#=============================================================================
+# Target rules for target LIEF/CMakeFiles/lief_spdlog_project.dir
+
+# All Build rule for target.
+LIEF/CMakeFiles/lief_spdlog_project.dir/all:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_spdlog_project.dir/build.make LIEF/CMakeFiles/lief_spdlog_project.dir/depend
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_spdlog_project.dir/build.make LIEF/CMakeFiles/lief_spdlog_project.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=95,96 "Built target lief_spdlog_project"
+.PHONY : LIEF/CMakeFiles/lief_spdlog_project.dir/all
+
+# Build rule for subdir invocation for target.
+LIEF/CMakeFiles/lief_spdlog_project.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIEF/CMakeFiles/lief_spdlog_project.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
+.PHONY : LIEF/CMakeFiles/lief_spdlog_project.dir/rule
+
+# Convenience name for target.
+lief_spdlog_project: LIEF/CMakeFiles/lief_spdlog_project.dir/rule
+.PHONY : lief_spdlog_project
+
+# clean rule for target.
+LIEF/CMakeFiles/lief_spdlog_project.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_spdlog_project.dir/build.make LIEF/CMakeFiles/lief_spdlog_project.dir/clean
+.PHONY : LIEF/CMakeFiles/lief_spdlog_project.dir/clean
+
+#=============================================================================
+# Target rules for target LIEF/CMakeFiles/lief_frozen.dir
+
+# All Build rule for target.
+LIEF/CMakeFiles/lief_frozen.dir/all:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_frozen.dir/build.make LIEF/CMakeFiles/lief_frozen.dir/depend
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_frozen.dir/build.make LIEF/CMakeFiles/lief_frozen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=89,90 "Built target lief_frozen"
+.PHONY : LIEF/CMakeFiles/lief_frozen.dir/all
+
+# Build rule for subdir invocation for target.
+LIEF/CMakeFiles/lief_frozen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIEF/CMakeFiles/lief_frozen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
+.PHONY : LIEF/CMakeFiles/lief_frozen.dir/rule
+
+# Convenience name for target.
+lief_frozen: LIEF/CMakeFiles/lief_frozen.dir/rule
+.PHONY : lief_frozen
+
+# clean rule for target.
+LIEF/CMakeFiles/lief_frozen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_frozen.dir/build.make LIEF/CMakeFiles/lief_frozen.dir/clean
+.PHONY : LIEF/CMakeFiles/lief_frozen.dir/clean
+
+#=============================================================================
+# Target rules for target LIEF/CMakeFiles/lief_expected.dir
+
+# All Build rule for target.
+LIEF/CMakeFiles/lief_expected.dir/all:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_expected.dir/build.make LIEF/CMakeFiles/lief_expected.dir/depend
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_expected.dir/build.make LIEF/CMakeFiles/lief_expected.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=88 "Built target lief_expected"
+.PHONY : LIEF/CMakeFiles/lief_expected.dir/all
+
+# Build rule for subdir invocation for target.
+LIEF/CMakeFiles/lief_expected.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIEF/CMakeFiles/lief_expected.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
+.PHONY : LIEF/CMakeFiles/lief_expected.dir/rule
+
+# Convenience name for target.
+lief_expected: LIEF/CMakeFiles/lief_expected.dir/rule
+.PHONY : lief_expected
+
+# clean rule for target.
+LIEF/CMakeFiles/lief_expected.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_expected.dir/build.make LIEF/CMakeFiles/lief_expected.dir/clean
+.PHONY : LIEF/CMakeFiles/lief_expected.dir/clean
+
+#=============================================================================
+# Target rules for target LIEF/CMakeFiles/lief_utfcpp.dir
+
+# All Build rule for target.
+LIEF/CMakeFiles/lief_utfcpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_utfcpp.dir/build.make LIEF/CMakeFiles/lief_utfcpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_utfcpp.dir/build.make LIEF/CMakeFiles/lief_utfcpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=97 "Built target lief_utfcpp"
+.PHONY : LIEF/CMakeFiles/lief_utfcpp.dir/all
+
+# Build rule for subdir invocation for target.
+LIEF/CMakeFiles/lief_utfcpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIEF/CMakeFiles/lief_utfcpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
+.PHONY : LIEF/CMakeFiles/lief_utfcpp.dir/rule
+
+# Convenience name for target.
+lief_utfcpp: LIEF/CMakeFiles/lief_utfcpp.dir/rule
+.PHONY : lief_utfcpp
+
+# clean rule for target.
+LIEF/CMakeFiles/lief_utfcpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_utfcpp.dir/build.make LIEF/CMakeFiles/lief_utfcpp.dir/clean
+.PHONY : LIEF/CMakeFiles/lief_utfcpp.dir/clean
+
+#=============================================================================
+# Target rules for target LIEF/CMakeFiles/lief_span.dir
+
+# All Build rule for target.
+LIEF/CMakeFiles/lief_span.dir/all:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_span.dir/build.make LIEF/CMakeFiles/lief_span.dir/depend
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_span.dir/build.make LIEF/CMakeFiles/lief_span.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=94 "Built target lief_span"
+.PHONY : LIEF/CMakeFiles/lief_span.dir/all
+
+# Build rule for subdir invocation for target.
+LIEF/CMakeFiles/lief_span.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIEF/CMakeFiles/lief_span.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
+.PHONY : LIEF/CMakeFiles/lief_span.dir/rule
+
+# Convenience name for target.
+lief_span: LIEF/CMakeFiles/lief_span.dir/rule
+.PHONY : lief_span
+
+# clean rule for target.
+LIEF/CMakeFiles/lief_span.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_span.dir/build.make LIEF/CMakeFiles/lief_span.dir/clean
+.PHONY : LIEF/CMakeFiles/lief_span.dir/clean
+
+#=============================================================================
+# Target rules for target LIEF/CMakeFiles/LIB_LIEF.dir
+
+# All Build rule for target.
+LIEF/CMakeFiles/LIB_LIEF.dir/all: LIEF/CMakeFiles/lief_libjson.dir/all
+LIEF/CMakeFiles/LIB_LIEF.dir/all: LIEF/CMakeFiles/lief_mbed_tls.dir/all
+LIEF/CMakeFiles/LIB_LIEF.dir/all: LIEF/CMakeFiles/lief_spdlog_project.dir/all
+LIEF/CMakeFiles/LIB_LIEF.dir/all: LIEF/CMakeFiles/lief_frozen.dir/all
+LIEF/CMakeFiles/LIB_LIEF.dir/all: LIEF/CMakeFiles/lief_expected.dir/all
+LIEF/CMakeFiles/LIB_LIEF.dir/all: LIEF/CMakeFiles/lief_utfcpp.dir/all
+LIEF/CMakeFiles/LIB_LIEF.dir/all: LIEF/CMakeFiles/lief_span.dir/all
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/LIB_LIEF.dir/build.make LIEF/CMakeFiles/LIB_LIEF.dir/depend
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/LIB_LIEF.dir/build.make LIEF/CMakeFiles/LIB_LIEF.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86 "Built target LIB_LIEF"
+.PHONY : LIEF/CMakeFiles/LIB_LIEF.dir/all
+
+# Build rule for subdir invocation for target.
+LIEF/CMakeFiles/LIB_LIEF.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 96
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIEF/CMakeFiles/LIB_LIEF.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles 0
+.PHONY : LIEF/CMakeFiles/LIB_LIEF.dir/rule
+
+# Convenience name for target.
+LIB_LIEF: LIEF/CMakeFiles/LIB_LIEF.dir/rule
+.PHONY : LIB_LIEF
+
+# clean rule for target.
+LIEF/CMakeFiles/LIB_LIEF.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/LIB_LIEF.dir/build.make LIEF/CMakeFiles/LIB_LIEF.dir/clean
+.PHONY : LIEF/CMakeFiles/LIB_LIEF.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,0 +1,13 @@
+# Target labels
+ lief_expected
+# Source files and their labels
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_expected
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_expected.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_expected-complete.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-build.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-configure.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-download.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-install.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-mkdir.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-patch.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-update.rule

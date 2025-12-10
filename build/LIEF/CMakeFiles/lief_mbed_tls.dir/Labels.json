@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_mbed_tls"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_mbed_tls.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_mbed_tls-complete.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-build.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-configure.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-download.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-install.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-mkdir.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-patch.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lief_mbed_tls"
+		],
+		"name" : "lief_mbed_tls"
+	}
+}

@@ -1,0 +1,13 @@
+# Target labels
+ lief_frozen
+# Source files and their labels
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_frozen
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_frozen.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_frozen-complete.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-build.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-configure.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-download.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-install.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-mkdir.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-patch.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-update.rule

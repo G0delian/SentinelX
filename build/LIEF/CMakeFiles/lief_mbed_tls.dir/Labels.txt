@@ -1,0 +1,13 @@
+# Target labels
+ lief_mbed_tls
+# Source files and their labels
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_mbed_tls
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_mbed_tls.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_mbed_tls-complete.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-build.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-configure.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-download.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-install.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-mkdir.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-patch.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/mbed_tls/src/lief_mbed_tls-stamp/lief_mbed_tls-update.rule

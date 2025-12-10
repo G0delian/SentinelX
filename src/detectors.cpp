@@ -2,6 +2,9 @@
 
 #include "binary_parser.h"
 #include "disassembler.h"
+#include "call_site_analyzer.h"
+#include "stack_analyzer.h"
+#include "arithmetic_analyzer.h"
 #include "fsm.hpp"
 #include "utils.h"
 
@@ -568,54 +571,30 @@ Findings BinaryDetector::analyze_binary(const std::string& path) const {
         return out;
     }
 
-    static const std::vector<std::string> dangerous_imports = {
+    // Initialize Disassembler once and cache the binary
+    Disassembler disasm;
+    disasm.load_binary(path);
+
+    // List of dangerous functions to detect
+    static const std::vector<std::string> dangerous_funcs = {
         "strcpy", "wcscpy", "strcat", "wcscat", "gets",
-        "sprintf", "vsprintf"
+        "sprintf", "vsprintf", "scanf", "fscanf", "sscanf"
     };
 
-    Disassembler disasm;
+    // Phase 1: Use CallSiteAnalyzer to find actual call sites
+    CallSiteAnalyzer cs_analyzer(disasm);
+    Findings cs_findings = cs_analyzer.analyze(info, dangerous_funcs);
+    out.insert(out.end(), cs_findings.begin(), cs_findings.end());
 
-    for (const auto& imp : info.imported_functions) {
-        std::string lower = to_lower(imp);
-        for (const auto& d : dangerous_imports) {
-            if (lower == d) {
-                // Дизассемблируем PLT/обёртку импортируемой функции
-                auto insts = disasm.disassemble_function(info, imp);
-                std::string snippet;
-                std::uint64_t first_addr = 0;
+    // Phase 2: Stack frame analysis
+    StackAnalyzer stack_analyzer(disasm);
+    Findings stack_findings = stack_analyzer.analyze(info);
+    out.insert(out.end(), stack_findings.begin(), stack_findings.end());
 
-                const std::size_t max_lines = 8;
-                std::size_t count = std::min(max_lines, insts.size());
-                for (std::size_t i = 0; i < count; ++i) {
-                    if (i == 0 && !insts.empty()) {
-                        first_addr = insts[i].address;
-                    }
-                    snippet += to_hex64(insts[i].address);
-                    snippet += ": ";
-                    snippet += insts[i].text;
-                    snippet += "\n";
-                }
-
-                std::string msg =
-                    "Binary imports potentially unsafe function '" + imp + "'.";
-
-                std::string rec =
-                    "Review all call sites of '" + imp +
-                    "' and consider replacing with bounded alternatives.";
-
-                add_binary_finding(out,
-                                   "BIN_UNSAFE_IMPORT_" + d,
-                                   Severity::Warning,
-                                   msg,
-                                   info.arch,
-                                   "",           
-                                   first_addr,
-                                   rec,
-                                   snippet);
-                break;
-            }
-        }
-    }
+    // Phase 3: Integer overflow and format string analysis
+    ArithmeticAnalyzer arith_analyzer(disasm);
+    Findings arith_findings = arith_analyzer.analyze(info);
+    out.insert(out.end(), arith_findings.begin(), arith_findings.end());
 
     return out;
 #endif

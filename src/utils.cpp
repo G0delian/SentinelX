@@ -63,4 +63,10 @@ std::string to_lower(std::string s) {
     return s;
 }
 
+std::string to_upper(std::string s) {
+    std::transform(s.begin(), s.end(), s.begin(),
+        [](unsigned char c) { return static_cast<char>(std::toupper(c)); });
+    return s;
+}
+
 } // namespace sentinel

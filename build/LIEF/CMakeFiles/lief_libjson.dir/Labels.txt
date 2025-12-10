@@ -1,0 +1,13 @@
+# Target labels
+ lief_libjson
+# Source files and their labels
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_libjson
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_libjson.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_libjson-complete.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson-stamp/lief_libjson-build.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson-stamp/lief_libjson-configure.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson-stamp/lief_libjson-download.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson-stamp/lief_libjson-install.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson-stamp/lief_libjson-mkdir.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson-stamp/lief_libjson-patch.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson-stamp/lief_libjson-update.rule
