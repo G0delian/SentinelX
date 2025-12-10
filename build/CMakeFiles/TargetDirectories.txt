@@ -1,0 +1,4 @@
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles/sentinelx_lib.dir
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles/SentinelX.dir
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles/edit_cache.dir
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles/rebuild_cache.dir
