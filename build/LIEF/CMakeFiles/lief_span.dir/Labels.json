@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_span"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_span.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_span-complete.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_span-prefix/src/lief_span-stamp/lief_span-build.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_span-prefix/src/lief_span-stamp/lief_span-configure.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_span-prefix/src/lief_span-stamp/lief_span-download.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_span-prefix/src/lief_span-stamp/lief_span-install.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_span-prefix/src/lief_span-stamp/lief_span-mkdir.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_span-prefix/src/lief_span-stamp/lief_span-patch.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_span-prefix/src/lief_span-stamp/lief_span-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lief_span"
+		],
+		"name" : "lief_span"
+	}
+}

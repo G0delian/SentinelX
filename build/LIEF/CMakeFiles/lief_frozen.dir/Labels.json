@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_frozen"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_frozen.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_frozen-complete.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-build.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-configure.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-download.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-install.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-mkdir.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-patch.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_frozen-prefix/src/lief_frozen-stamp/lief_frozen-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lief_frozen"
+		],
+		"name" : "lief_frozen"
+	}
+}

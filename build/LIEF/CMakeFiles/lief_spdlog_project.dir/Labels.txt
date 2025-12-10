@@ -1,0 +1,13 @@
+# Target labels
+ lief_spdlog_project
+# Source files and their labels
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_spdlog_project
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_spdlog_project.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_spdlog_project-complete.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_spdlog_project-prefix/src/lief_spdlog_project-stamp/lief_spdlog_project-build.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_spdlog_project-prefix/src/lief_spdlog_project-stamp/lief_spdlog_project-configure.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_spdlog_project-prefix/src/lief_spdlog_project-stamp/lief_spdlog_project-download.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_spdlog_project-prefix/src/lief_spdlog_project-stamp/lief_spdlog_project-install.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_spdlog_project-prefix/src/lief_spdlog_project-stamp/lief_spdlog_project-mkdir.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_spdlog_project-prefix/src/lief_spdlog_project-stamp/lief_spdlog_project-patch.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_spdlog_project-prefix/src/lief_spdlog_project-stamp/lief_spdlog_project-update.rule

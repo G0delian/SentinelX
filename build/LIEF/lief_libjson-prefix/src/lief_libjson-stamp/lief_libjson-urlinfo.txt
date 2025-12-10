@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson-stamp/verify-lief_libjson.cmake;COMMAND;/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson-stamp/extract-lief_libjson.cmake
+source_dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src/lief_libjson
+work_dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_libjson-prefix/src
+url(s)=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/LIEF/third-party//json-3.12.0.zip
+hash=SHA256=6a2249e5d61c2a8351abfac218e08e9a43426dddb493950d30f3b8acfbbc648d
+      no_extract=
+

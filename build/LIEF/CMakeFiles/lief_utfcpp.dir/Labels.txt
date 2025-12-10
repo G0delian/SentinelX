@@ -1,0 +1,13 @@
+# Target labels
+ lief_utfcpp
+# Source files and their labels
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_utfcpp
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_utfcpp.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_utfcpp-complete.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-build.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-configure.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-download.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-install.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-mkdir.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-patch.rule
+/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-update.rule

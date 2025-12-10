@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	/opt/homebrew/Cellar/cmake/3.30.5/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	/opt/homebrew/Cellar/cmake/3.30.5/bin/cpack --config ./CPackSourceConfig.cmake /Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -84,6 +104,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"config\" \"headers\" \"libraries\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -141,6 +206,110 @@ SentinelX: cmake_check_build_system
 SentinelX/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SentinelX.dir/build.make CMakeFiles/SentinelX.dir/build
 .PHONY : SentinelX/fast
+
+#=============================================================================
+# Target rules for targets named lief_libjson
+
+# Build rule for target.
+lief_libjson: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lief_libjson
+.PHONY : lief_libjson
+
+# fast build rule for target.
+lief_libjson/fast:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_libjson.dir/build.make LIEF/CMakeFiles/lief_libjson.dir/build
+.PHONY : lief_libjson/fast
+
+#=============================================================================
+# Target rules for targets named lief_mbed_tls
+
+# Build rule for target.
+lief_mbed_tls: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lief_mbed_tls
+.PHONY : lief_mbed_tls
+
+# fast build rule for target.
+lief_mbed_tls/fast:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_mbed_tls.dir/build.make LIEF/CMakeFiles/lief_mbed_tls.dir/build
+.PHONY : lief_mbed_tls/fast
+
+#=============================================================================
+# Target rules for targets named lief_spdlog_project
+
+# Build rule for target.
+lief_spdlog_project: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lief_spdlog_project
+.PHONY : lief_spdlog_project
+
+# fast build rule for target.
+lief_spdlog_project/fast:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_spdlog_project.dir/build.make LIEF/CMakeFiles/lief_spdlog_project.dir/build
+.PHONY : lief_spdlog_project/fast
+
+#=============================================================================
+# Target rules for targets named lief_frozen
+
+# Build rule for target.
+lief_frozen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lief_frozen
+.PHONY : lief_frozen
+
+# fast build rule for target.
+lief_frozen/fast:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_frozen.dir/build.make LIEF/CMakeFiles/lief_frozen.dir/build
+.PHONY : lief_frozen/fast
+
+#=============================================================================
+# Target rules for targets named lief_expected
+
+# Build rule for target.
+lief_expected: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lief_expected
+.PHONY : lief_expected
+
+# fast build rule for target.
+lief_expected/fast:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_expected.dir/build.make LIEF/CMakeFiles/lief_expected.dir/build
+.PHONY : lief_expected/fast
+
+#=============================================================================
+# Target rules for targets named lief_utfcpp
+
+# Build rule for target.
+lief_utfcpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lief_utfcpp
+.PHONY : lief_utfcpp
+
+# fast build rule for target.
+lief_utfcpp/fast:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_utfcpp.dir/build.make LIEF/CMakeFiles/lief_utfcpp.dir/build
+.PHONY : lief_utfcpp/fast
+
+#=============================================================================
+# Target rules for targets named lief_span
+
+# Build rule for target.
+lief_span: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lief_span
+.PHONY : lief_span
+
+# fast build rule for target.
+lief_span/fast:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/lief_span.dir/build.make LIEF/CMakeFiles/lief_span.dir/build
+.PHONY : lief_span/fast
+
+#=============================================================================
+# Target rules for targets named LIB_LIEF
+
+# Build rule for target.
+LIB_LIEF: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIB_LIEF
+.PHONY : LIB_LIEF
+
+# fast build rule for target.
+LIB_LIEF/fast:
+	$(MAKE) $(MAKESILENT) -f LIEF/CMakeFiles/LIB_LIEF.dir/build.make LIEF/CMakeFiles/LIB_LIEF.dir/build
+.PHONY : LIB_LIEF/fast
 
 src/analyzer.o: src/analyzer.cpp.o
 .PHONY : src/analyzer.o
@@ -413,7 +582,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... lief_expected"
+	@echo "... lief_frozen"
+	@echo "... lief_libjson"
+	@echo "... lief_mbed_tls"
+	@echo "... lief_span"
+	@echo "... lief_spdlog_project"
+	@echo "... lief_utfcpp"
+	@echo "... LIB_LIEF"
 	@echo "... SentinelX"
 	@echo "... sentinelx_lib"
 	@echo "... src/analyzer.o"

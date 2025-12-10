@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_utfcpp"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_utfcpp.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_utfcpp-complete.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-build.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-configure.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-download.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-install.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-mkdir.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-patch.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_utfcpp-prefix/src/lief_utfcpp-stamp/lief_utfcpp-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lief_utfcpp"
+		],
+		"name" : "lief_utfcpp"
+	}
+}

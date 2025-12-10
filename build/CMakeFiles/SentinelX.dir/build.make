@@ -93,6 +93,7 @@ SentinelX_EXTERNAL_OBJECTS =
 SentinelX: CMakeFiles/SentinelX.dir/src/main.cpp.o
 SentinelX: CMakeFiles/SentinelX.dir/build.make
 SentinelX: libsentinelx_lib.a
+SentinelX: LIEF/libLIEF.a
 SentinelX: CMakeFiles/SentinelX.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SentinelX"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SentinelX.dir/link.txt --verbose=$(VERBOSE)

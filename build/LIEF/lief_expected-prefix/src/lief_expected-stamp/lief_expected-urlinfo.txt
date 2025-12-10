@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/verify-lief_expected.cmake;COMMAND;/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/extract-lief_expected.cmake
+source_dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected
+work_dir=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src
+url(s)=/Users/izzattillakhodza/Desktop/myprojects/SentinelX/LIEF/third-party//expected-1.2.0.zip
+hash=SHA256=a3031c888eb4f891d6df8d695c9b939c8b0ff815f9daafb378d6ab06d2a40937
+      no_extract=
+

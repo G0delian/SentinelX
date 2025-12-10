@@ -16,6 +16,9 @@ add_library(sentinelx_lib
     src/utils.cpp
     src/binary_parser.cpp
     src/json_output.cpp
+    src/call_site_analyzer.cpp
+    src/stack_analyzer.cpp
+    src/arithmetic_analyzer.cpp
 )
 
 target_include_directories(sentinelx_lib

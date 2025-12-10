@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_expected"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_expected.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/CMakeFiles/lief_expected-complete.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-build.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-configure.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-download.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-install.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-mkdir.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-patch.rule"
+		},
+		{
+			"file" : "/Users/izzattillakhodza/Desktop/myprojects/SentinelX/build/LIEF/lief_expected-prefix/src/lief_expected-stamp/lief_expected-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lief_expected"
+		],
+		"name" : "lief_expected"
+	}
+}
